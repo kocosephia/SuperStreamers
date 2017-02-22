@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-[CreateAssetMenu(fileName = "Building", menuName = "SuperStreamers/DataObjects", order = 2)]
+[CreateAssetMenu(fileName = "Building", menuName = "SuperStreamers/BuildingAsset", order = 2)]
 public class BuildingAsset : ScriptableObject {
 
 	public string buildingName;
@@ -13,15 +13,16 @@ public class BuildingAsset : ScriptableObject {
 
 	public BuildingRequirement[] requirements;
 
-	public float cost;
+	public BuildingCost cost;
 
 	public Resource generatedResource;
 	public float resourcesPerSecond;
 
-	public Resource consumedResource1;
-	public Resource consumedResource2;
-	public Resource producedResource;
-	public float resource1ConsumptionRate;
-	public float resource2ConsumptionRate;
-	public float productionRate;
+	public Resource[] consumedResources;
+
+	public Resource[] producedResources;
+
+	public float[] resourceConsumptionRates;
+
+	public float[] productionRates;
 }
