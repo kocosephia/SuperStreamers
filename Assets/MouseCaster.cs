@@ -29,7 +29,7 @@ public class MouseCaster : MonoBehaviour {
 		Ray mouseRay = castCamera.ScreenPointToRay (Input.mousePosition);
 
 		if (Physics.Raycast (mouseRay, out hit)) {
-			if (hit.collider.GetInstanceID () != lastHitID && hit.collider.GetComponent<Clickable> ()) {
+			if ((hit.collider.GetInstanceID () != lastHitID) && hit.collider.GetComponent<Clickable> ()) {
 				if (currentRef != null && MouseExitObject != null) {
 					MouseExitObject (currentRef);
 				}

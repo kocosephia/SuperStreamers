@@ -12,8 +12,8 @@ public class CubeGridEditor : Editor {
 
 		DrawDefaultInspector ();
 
-		if (GUILayout.Button ("Reposition")) {
-			cubeGrid.PositionObjects ();
+		if (GUILayout.Button ("Create Grid")) {
+			cubeGrid.CreateGrid ();
 		}
 	}
 }
