@@ -1,0 +1,24 @@
+Necromancy themed
+bone
+4 humours
+	blood
+	phlegm
+	bile
+	other bile
+
+soul parts
+flesh
+ligaments
+sinew
+organs
+	lungs
+	spleen
+	heart
+	etc
+	liver
+	skin
+spell comonents
+humans
+corpses
+animals
+

@@ -102,6 +102,7 @@ public class GameState : MonoBehaviour {
 		instance.gold = 0;
 		Upgrades.PurgeUpgradesForStream ();
 		Upgrades.SetupUpgrades ();
+        LevelSpawner.ResetLevel();
 	}
 		
 	
