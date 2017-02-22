@@ -20,5 +20,5 @@ organs
 spell comonents
 humans
 corpses
-animal
+animals
 
